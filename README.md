@@ -34,3 +34,19 @@ use are as follows:
 * Aug5: Horizontal flip, Gaussian blur, Rotate, Color distort (jitter), Crop and Resize
 * Aug6: Color distort (jitter), Color distort (drop), Horizontal flip, Crop and Resize
 
+
+We observe that the highest accuracy is obtained by using Aug0 and the least accuracy is obtained by using Aug1. Aug0 and Aug6 consist of the same types of augmentations, but in a different order. We observe that the accuracies corresponding to both of them are different, but not drastically so. We hypothesize that if different orders of particular sets of augmentations are chosen, the accuracies might change drastically. As reported in the SimCLR paper, it is critical to compose Crop and Resize with Color distort (jitter) as a potential issue with images is that when only random cropping is applied, most patches from an image share a similar color distribution. We observe that Aug1 is the only augmentation we use without this combination and consequently Aug1 has the least accuracy.
+
+The augmentations imposed are crucial to the performance of the model.
+
+## Number of epochs in the MoCo encoder
+We vary the number of epochs during the training of the MoCo encoder to 20, 30, 40 and 50. We observe that there is no significant pattern in the accuracies of the unsupervised model with respect to the number of epochs.
+
+## Size of the queue
+We set the size of the queue of the dictionary to 16, 1024 and 4096.We observe that the accuracies of the model increase slightly with the increase in the size of queue.
+
+## Dimensions of the representation vectors of images
+We change the dimensions of the representation vectors of images to 8, 64 and 128. We do not observe any significant change in the accuracies with a change in the dimensions of the representation vectors of images.
+
+## Size of the mini-batch
+We vary the size of the mini-batch to 100, 200, 300 and 400. We observe no visible trend between the size of the mini-batch and the accuracy of the unsupervised model. We observe that accuracies do not change significantly.

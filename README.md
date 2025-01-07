@@ -1,6 +1,6 @@
 # Term-Paper
 
-The algorithm used in MoCo has some key parameters such as batch size, number of epochs, etc., based on which the accuracy of the self-supervised learning model is expected to vary. The encoder convolutional network used for our MoCo model has 2 convolutional layers and 1 fully connected layer. The standard convolutional net for baseline has 2 convolutional layers, 3 fully connected layers.
+We implemented Momentum Contrast (MoCo) in Python and performed some experiments. The algorithm used in MoCo has some key parameters such as batch size, number of epochs, etc., based on which the accuracy of the self-supervised learning model is expected to vary. The encoder convolutional network used for our MoCo model has 2 convolutional layers and 1 fully connected layer. The standard convolutional net for baseline has 2 convolutional layers, 3 fully connected layers.
 
 We study unsupervised training performed in CIFAR-10 dataset.
 

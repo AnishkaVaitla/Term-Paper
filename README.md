@@ -11,7 +11,6 @@ We vary the following parameters to study their effect on the accuracy of the Mo
 The CIFAR-10 dataset consisting of 60000 images from 10 different classes is divided into the following ratios: 10:90 (6000 images in the training dataset and 54000 images in the testing dataset), 20:80, 30:70, 40:60, 50:50 in this order. The total size of the dataset used (both training and testing datasets combined) remains constant. We compare the accuracies of the unsupervised model with the corresponding accuracies of the supervised model for each ratio of the sizes of the training and the testing datasets.
 
 We observe the following:
-
 The accuracy of the unsupervised learning model consistently increases with the size of the training dataset and the consequent decrease in the size of the testing dataset.
 
 The accuracy of the supervised learning model also increases with the increase in the size of the training dataset.

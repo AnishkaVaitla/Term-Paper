@@ -25,3 +25,12 @@ Based on the above observations, we infer that the larger the size of the traini
 
 We use different sequences of augmentations. The labels we use for the various augmentations we
 use are as follows:
+
+*Aug0: Crop and Resize, Color distort (drop), Color distort (jitter), Rotation
+*Aug1: Color distort (jitter), Gaussian blur, Horizontal flip, Color distort (drop)
+*Aug2: Crop and Resize, Sobel filtering, Color distort (jitter), Rotate
+*Aug3: Crop and Resize, Sobel filtering, Gaussian blur, Color distort (drop)
+*Aug4: Horizontal flip, Gaussian blur, Rotate, Color distort (jitter), Crop and Resize
+*Aug5: Horizontal flip, Gaussian blur, Rotate, Color distort (jitter), Crop and Resize
+*Aug6: Color distort (jitter), Color distort (drop), Horizontal flip, Crop and Resize
+
